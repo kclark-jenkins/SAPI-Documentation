@@ -11,6 +11,7 @@
             "name": "..\\SAPI\\src\\js\\SAPI.js",
             "modules": {},
             "classes": {
+                "Birt": 1,
                 "BirtDataProperties": 1,
                 "BirtLabelProperties": 1,
                 "BirtTextProperties": 1,
@@ -18,12 +19,34 @@
                 "BirtTableProperties": 1,
                 "BirtGridProperties": 1
             },
-            "fors": {},
+            "fors": {
+                "BirtData": 1,
+                "BirtLabel": 1,
+                "BirtText": 1,
+                "BirtChart": 1,
+                "BirtTable": 1,
+                "BirtGrid": 1,
+                "BirtItemProperties": 1,
+                "Birt": 1
+            },
             "namespaces": {}
         }
     },
     "modules": {},
     "classes": {
+        "Birt": {
+            "name": "Birt",
+            "shortname": "Birt",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 96,
+            "description": "Class used for created BIRT items to be used in a report",
+            "is_constructor": 1
+        },
         "BirtDataProperties": {
             "name": "BirtDataProperties",
             "shortname": "BirtDataProperties",
@@ -33,7 +56,7 @@
             "plugin_for": [],
             "extension_for": [],
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 106,
+            "line": 147,
             "description": "Properties class for BirtData",
             "is_constructor": 1
         },
@@ -46,7 +69,7 @@
             "plugin_for": [],
             "extension_for": [],
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 113,
+            "line": 154,
             "description": "Properties class for BirtLabel",
             "is_constructor": 1
         },
@@ -59,7 +82,7 @@
             "plugin_for": [],
             "extension_for": [],
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 120,
+            "line": 161,
             "description": "Properties class for BirtText",
             "is_constructor": 1
         },
@@ -72,7 +95,7 @@
             "plugin_for": [],
             "extension_for": [],
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 127,
+            "line": 168,
             "description": "Properties class for BirtChart",
             "is_constructor": 1
         },
@@ -85,7 +108,7 @@
             "plugin_for": [],
             "extension_for": [],
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 134,
+            "line": 175,
             "description": "Properties class for BirtTable",
             "is_constructor": 1
         },
@@ -98,16 +121,237 @@
             "plugin_for": [],
             "extension_for": [],
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 141,
+            "line": 182,
             "description": "Properties class for BirtGrid",
             "is_constructor": 1
+        },
+        "BirtData": {
+            "name": "BirtData",
+            "shortname": "BirtData",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": []
+        },
+        "BirtLabel": {
+            "name": "BirtLabel",
+            "shortname": "BirtLabel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": []
+        },
+        "BirtText": {
+            "name": "BirtText",
+            "shortname": "BirtText",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": []
+        },
+        "BirtChart": {
+            "name": "BirtChart",
+            "shortname": "BirtChart",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": []
+        },
+        "BirtTable": {
+            "name": "BirtTable",
+            "shortname": "BirtTable",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": []
+        },
+        "BirtGrid": {
+            "name": "BirtGrid",
+            "shortname": "BirtGrid",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": []
+        },
+        "BirtItemProperties": {
+            "name": "BirtItemProperties",
+            "shortname": "BirtItemProperties",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": []
         }
     },
     "elements": {},
     "classitems": [
         {
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 159,
+            "line": 103,
+            "description": "Class used to create a BIRT Data Object connection definition",
+            "params": [
+                {
+                    "name": "dataProperties",
+                    "description": ""
+                }
+            ],
+            "is_constructor": 1,
+            "class": "Birt"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 109,
+            "description": "Class used to create a label to be used in a report",
+            "params": [
+                {
+                    "name": "labelProperties",
+                    "description": ""
+                }
+            ],
+            "is_constructor": 1,
+            "class": "Birt"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 116,
+            "description": "Class used to create a text item to be used in a report",
+            "params": [
+                {
+                    "name": "textProperties",
+                    "description": ""
+                }
+            ],
+            "is_constructor": 1,
+            "class": "Birt"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 122,
+            "description": "Class used to create a chart item to be used in a report",
+            "params": [
+                {
+                    "name": "chartProperties",
+                    "description": ""
+                }
+            ],
+            "is_constructor": 1,
+            "class": "Birt"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 129,
+            "description": "Class used to create a table to be used in a report",
+            "params": [
+                {
+                    "name": "tableProperties",
+                    "description": ""
+                }
+            ],
+            "is_constructor": 1,
+            "class": "Birt"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 137,
+            "description": "Class ussed to create a grid to be used in a report",
+            "params": [
+                {
+                    "name": "gridProperties",
+                    "description": ""
+                }
+            ],
+            "is_constructor": 1,
+            "class": "Birt"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 191,
+            "description": "Properties for BirtData",
+            "itemtype": "method",
+            "name": "getProperties",
+            "return": {
+                "description": "dataProperties",
+                "type": "BirtDataProperties"
+            },
+            "class": "BirtData"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 200,
+            "description": "Properties for BirtLabel",
+            "itemtype": "method",
+            "name": "getProperties",
+            "class": "BirtLabel"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 209,
+            "description": "Properties for BirtText",
+            "itemtype": "method",
+            "name": "getProperties",
+            "return": {
+                "description": "textProperties",
+                "type": "BirtTextProperties"
+            },
+            "class": "BirtText"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 218,
+            "description": "Properties for BirtChart",
+            "itemtype": "method",
+            "name": "getProperties",
+            "return": {
+                "description": "chartProperties",
+                "type": "BirtChartProperties"
+            },
+            "class": "BirtChart"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 227,
+            "description": "Properties for BirtTable",
+            "itemtype": "method",
+            "name": "getProperties",
+            "return": {
+                "description": "tableProperties",
+                "type": "BirtTableProperties"
+            },
+            "class": "BirtTable"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 236,
+            "description": "Properties for BirtGrid",
+            "itemtype": "method",
+            "name": "getProperties",
+            "return": {
+                "description": "gridProperties",
+                "type": "BirtGridProperties"
+            },
+            "class": "BirtGrid"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 245,
+            "description": "Generic BIRT item properties",
+            "itemtype": "method",
+            "name": "getProperties",
+            "return": {
+                "description": "birtItemProperties",
+                "type": "BirtItemProperties"
+            },
+            "class": "BirtItemProperties"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 256,
             "description": "Properties setter for BirtData object",
             "itemtype": "method",
             "name": "setProperties",
@@ -115,18 +359,14 @@
                 {
                     "name": "dataProperties",
                     "description": "Argument 1",
-                    "type": "Object"
+                    "type": "BirtDataProperties"
                 }
             ],
-            "return": {
-                "description": "nothing",
-                "type": "Null"
-            },
-            "class": "BirtGridProperties"
+            "class": "BirtData"
         },
         {
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 167,
+            "line": 264,
             "description": "Properties setter for BirtLabel object",
             "itemtype": "method",
             "name": "setProperties",
@@ -134,18 +374,14 @@
                 {
                     "name": "labelProperties",
                     "description": "Argument 1",
-                    "type": "Object"
+                    "type": "BirtLabelProperties"
                 }
             ],
-            "return": {
-                "description": "nothing",
-                "type": "Null"
-            },
-            "class": "BirtGridProperties"
+            "class": "BirtLabel"
         },
         {
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 175,
+            "line": 272,
             "description": "Properties setter for BirtText object",
             "itemtype": "method",
             "name": "setProperties",
@@ -153,18 +389,14 @@
                 {
                     "name": "textProperties",
                     "description": "Argument 1",
-                    "type": "Object"
+                    "type": "BirtTextProperties"
                 }
             ],
-            "return": {
-                "description": "nothing",
-                "type": "Null"
-            },
-            "class": "BirtGridProperties"
+            "class": "BirtText"
         },
         {
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 183,
+            "line": 280,
             "description": "Properties setter for BirtChart object",
             "itemtype": "method",
             "name": "setProperties",
@@ -172,18 +404,14 @@
                 {
                     "name": "chartProperties",
                     "description": "Argument 1",
-                    "type": "Object"
+                    "type": "BirtChartProperties"
                 }
             ],
-            "return": {
-                "description": "nothing",
-                "type": "Null"
-            },
-            "class": "BirtGridProperties"
+            "class": "BirtChart"
         },
         {
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 191,
+            "line": 288,
             "description": "Properties setter for BirtTable object",
             "itemtype": "method",
             "name": "setProperties",
@@ -191,18 +419,14 @@
                 {
                     "name": "tableProperties",
                     "description": "Argument 1",
-                    "type": "Object"
+                    "type": "BirtTableProperties"
                 }
             ],
-            "return": {
-                "description": "nothing",
-                "type": "Null"
-            },
-            "class": "BirtGridProperties"
+            "class": "BirtTable"
         },
         {
             "file": "..\\SAPI\\src\\js\\SAPI.js",
-            "line": 199,
+            "line": 296,
             "description": "Properties setter for BirtGrid object",
             "itemtype": "method",
             "name": "setProperties",
@@ -210,15 +434,80 @@
                 {
                     "name": "gridProperties",
                     "description": "Argument 1",
-                    "type": "Object"
+                    "type": "BirtGridProperties"
+                }
+            ],
+            "class": "BirtGrid"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 307,
+            "description": "Creates a new empty report design",
+            "itemtype": "method",
+            "name": "initNewReport",
+            "class": "Birt"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 314,
+            "description": "Saves a report design in XML format to the defined iHub for report generation",
+            "itemtype": "method",
+            "name": "saveReport",
+            "params": [
+                {
+                    "name": "qualifiedReportName",
+                    "description": ""
+                },
+                {
+                    "name": "overwrite",
+                    "description": ""
+                }
+            ],
+            "class": "Birt"
+        },
+        {
+            "file": "..\\SAPI\\src\\js\\SAPI.js",
+            "line": 325,
+            "description": "Retireves a list of available data objects at the given location",
+            "itemtype": "method",
+            "name": "listDataModels",
+            "params": [
+                {
+                    "name": "qulifiedPath",
+                    "description": ""
                 }
             ],
             "return": {
-                "description": "nothing",
-                "type": "Null"
+                "description": "availableDataModels",
+                "type": "Object"
             },
-            "class": "BirtGridProperties"
+            "class": "BirtData"
         }
     ],
-    "warnings": []
+    "warnings": [
+        {
+            "message": "Missing item type\nClass used to create a BIRT Data Object connection definition",
+            "line": " ..\\SAPI\\src\\js\\SAPI.js:103"
+        },
+        {
+            "message": "Missing item type\nClass used to create a label to be used in a report",
+            "line": " ..\\SAPI\\src\\js\\SAPI.js:109"
+        },
+        {
+            "message": "Missing item type\nClass used to create a text item to be used in a report",
+            "line": " ..\\SAPI\\src\\js\\SAPI.js:116"
+        },
+        {
+            "message": "Missing item type\nClass used to create a chart item to be used in a report",
+            "line": " ..\\SAPI\\src\\js\\SAPI.js:122"
+        },
+        {
+            "message": "Missing item type\nClass used to create a table to be used in a report",
+            "line": " ..\\SAPI\\src\\js\\SAPI.js:129"
+        },
+        {
+            "message": "Missing item type\nClass ussed to create a grid to be used in a report",
+            "line": " ..\\SAPI\\src\\js\\SAPI.js:137"
+        }
+    ]
 }
